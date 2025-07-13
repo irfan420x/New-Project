@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Irfan's Cyber Space</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Matrix Background -->
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="terminal-prompt">irfan@cyberspace:~$</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">irfan@cyberspace: ~/projects</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">irfan@cyberspace:~/projects$</span>
+                            <span class="command">ls -la</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output glow">My Security Tools & Web Applications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project1.jpg" alt="VulnScanner Pro" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">VulnScanner Pro</h3>
+                                <div class="project-status">
+                                    <span class="status-badge active">Active</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Advanced web vulnerability scanner with automated reporting. Built with Python and Flask, featuring OWASP Top 10 detection and custom payload generation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">BeautifulSoup</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>42</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>15</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>128</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project2.jpg" alt="SecureChat App" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">SecureChat App</h3>
+                                <div class="project-status">
+                                    <span class="status-badge active">Active</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                End-to-end encrypted messaging application with perfect forward secrecy. Features real-time messaging, file sharing, and self-destructing messages.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>67</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>23</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>204</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project3.jpg" alt="Network Mapper" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Network Mapper</h3>
+                                <div class="project-status">
+                                    <span class="status-badge completed">Completed</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Interactive network discovery and mapping tool with visual topology representation. Features port scanning, service detection, and vulnerability assessment.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Nmap</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Django</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>89</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>31</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>356</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project4.jpg" alt="Crypto Portfolio" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Crypto Portfolio</h3>
+                                <div class="project-status">
+                                    <span class="status-badge active">Active</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Secure cryptocurrency portfolio tracker with real-time market data, advanced analytics, and multi-wallet support. Features encrypted storage and 2FA.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>154</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>48</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>512</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project5.jpg" alt="Phishing Detector" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Phishing Detector</h3>
+                                <div class="project-status">
+                                    <span class="status-badge development">In Dev</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Machine learning-powered phishing detection system with browser extension. Uses NLP and computer vision to identify suspicious websites and emails.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Chrome API</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>78</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>19</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>243</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project6.jpg" alt="Password Manager" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Live">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Password Manager</h3>
+                                <div class="project-status">
+                                    <span class="status-badge completed">Completed</span>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Zero-knowledge password manager with cross-platform sync, biometric authentication, and breach monitoring. Features secure password generation and sharing.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Electron</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">AES-256</span>
+                                <span class="tech-tag">SQLCipher</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>234</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>67</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>891</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Stats -->
+        <section class="github-stats">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">~/stats$</span>
+                    <span class="glow">git log --oneline | wc -l</span>
+                </h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number">1.2k</div>
+                        <div class="stat-label">Stars</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="stat-number">300+</div>
+                        <div class="stat-label">Forks</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">5k</div>
+                        <div class="stat-label">Followers</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="projects-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Interested in collaborating?</h2>
+                    <p class="cta-text">Let's build something amazing together. I'm always open to discussing new projects and opportunities.</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="terminal-text">
+                        <span class="prompt">irfan@cyberspace:~$</span>
+                        <span class="command">echo "Thanks for visiting!"</span>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

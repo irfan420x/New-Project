@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Irfan's Cyber Space</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Matrix Background -->
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="terminal-prompt">irfan@cyberspace:~$</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">irfan@cyberspace: ~/contact</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">irfan@cyberspace:~/contact$</span>
+                            <span class="command">init_communication_channel</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output glow">Let's connect and build something amazing together!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2 class="form-title">
+                            <i class="fas fa-terminal"></i>
+                            Send Message
+                        </h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    <i class="fas fa-user"></i>
+                                    Name
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                                <div class="input-border"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i>
+                                    Email
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="Enter your email"
+                                    required
+                                >
+                                <div class="input-border"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">
+                                    <i class="fas fa-tag"></i>
+                                    Subject
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="form-input" 
+                                    placeholder="What's this about?"
+                                    required
+                                >
+                                <div class="input-border"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    <i class="fas fa-comment"></i>
+                                    Message
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-textarea" 
+                                    placeholder="Tell me about your project or just say hi!"
+                                    rows="6"
+                                    required
+                                ></textarea>
+                                <div class="input-border"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2 class="info-title">
+                            <i class="fas fa-address-card"></i>
+                            Get In Touch
+                        </h2>
+                        <div class="info-content">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h3>Location</h3>
+                                    <p>Digital Realm, Cyberspace</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h3>Email</h3>
+                                    <p>irfan@cyberspace.dev</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h3>Response Time</h3>
+                                    <p>Usually within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terminal Status -->
+                        <div class="terminal-status">
+                            <div class="status-header">
+                                <i class="fas fa-terminal"></i>
+                                System Status
+                            </div>
+                            <div class="status-body">
+                                <div class="status-line">
+                                    <span class="status-label">Email Server:</span>
+                                    <span class="status-value online">ONLINE</span>
+                                </div>
+                                <div class="status-line">
+                                    <span class="status-label">Response Bot:</span>
+                                    <span class="status-value online">ACTIVE</span>
+                                </div>
+                                <div class="status-line">
+                                    <span class="status-label">Security:</span>
+                                    <span class="status-value secure">SECURE</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-section">
+                            <h3 class="social-title">Connect With Me</h3>
+                            <div class="social-links-contact">
+                                <a href="#" class="social-link-contact" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="social-link-contact" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-link-contact" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link-contact" aria-label="Discord">
+                                    <i class="fab fa-discord"></i>
+                                    <span>Discord</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">~/faq$</span>
+                    <span class="glow">cat frequently_asked.txt</span>
+                </h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            What's the best way to reach you?
+                        </div>
+                        <div class="faq-answer">
+                            Email is the most reliable way to reach me. I check my inbox regularly and respond within 24 hours during business days.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            Do you take on freelance projects?
+                        </div>
+                        <div class="faq-answer">
+                            Yes! I'm always interested in challenging cybersecurity and development projects. Feel free to reach out with your requirements.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            Can you help with security audits?
+                        </div>
+                        <div class="faq-answer">
+                            Absolutely! I offer comprehensive security audits for web applications, networks, and infrastructure. Let's discuss your needs.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <i class="fas fa-question-circle"></i>
+                            Are you available for collaborations?
+                        </div>
+                        <div class="faq-answer">
+                            I'm always open to collaborating on interesting projects, especially those involving cybersecurity, open-source contributions, or innovative web applications.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="terminal-text">
+                        <span class="prompt">irfan@cyberspace:~$</span>
+                        <span class="command">echo "Thanks for visiting!"</span>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

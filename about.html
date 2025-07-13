@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Irfan's Cyber Space</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Matrix Background -->
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="terminal-prompt">irfan@cyberspace:~$</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">irfan@cyberspace: ~/about</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">irfan@cyberspace:~/about$</span>
+                            <span class="command">cat profile.txt</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output glow">About Irfan - Cybersecurity Expert & Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Profile Info -->
+                    <div class="about-card">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-lang">python</span>
+                                <span class="code-file">profile.py</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(self):
+        self.name = <span class="code-string">"Irfan"</span>
+        self.role = <span class="code-string">"Cybersecurity Expert"</span>
+        self.location = <span class="code-string">"Digital Realm"</span>
+        self.passion = <span class="code-string">"Securing the future"</span>
+        
+    <span class="code-keyword">def</span> <span class="code-function">get_skills</span>(self):
+        <span class="code-keyword">return</span> [
+            <span class="code-string">"Penetration Testing"</span>,
+            <span class="code-string">"Web Security"</span>,
+            <span class="code-string">"Full Stack Development"</span>,
+            <span class="code-string">"Python & JavaScript"</span>,
+            <span class="code-string">"Network Security"</span>
+        ]
+
+<span class="code-comment"># Initialize developer instance</span>
+irfan = Developer()
+print(f<span class="code-string">"Welcome to {irfan.name}'s world!"</span>)</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Section -->
+                    <div class="about-card">
+                        <h2 class="card-title">
+                            <i class="fas fa-terminal"></i>
+                            My Journey
+                        </h2>
+                        <div class="terminal-story">
+                            <div class="terminal-line">
+                                <span class="prompt">irfan@journey:~$</span>
+                                <span class="command">history | grep "passion"</span>
+                            </div>
+                            <div class="story-content">
+                                <p>My journey into cybersecurity began with a fascination for understanding how digital systems work—and more importantly, how they can be secured. What started as curiosity about network protocols and system vulnerabilities evolved into a deep passion for protecting digital infrastructure.</p>
+                                
+                                <p>I've spent years mastering the art of ethical hacking, developing security tools, and building robust web applications. Every line of code I write is guided by security-first principles, ensuring that functionality never comes at the expense of safety.</p>
+                                
+                                <p>When I'm not penetrating systems or building applications, you'll find me contributing to open-source security projects, sharing knowledge with the community, and staying updated with the latest security research.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="about-card">
+                        <h2 class="card-title">
+                            <i class="fas fa-code"></i>
+                            Technical Arsenal
+                        </h2>
+                        <div class="skills-detailed">
+                            <div class="skill-category">
+                                <h3 class="category-title">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Cybersecurity
+                                </h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Penetration Testing</span>
+                                    <span class="skill-tag">Web App Security</span>
+                                    <span class="skill-tag">Network Security</span>
+                                    <span class="skill-tag">OSINT</span>
+                                    <span class="skill-tag">Vulnerability Assessment</span>
+                                    <span class="skill-tag">Incident Response</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3 class="category-title">
+                                    <i class="fas fa-laptop-code"></i>
+                                    Development
+                                </h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Django</span>
+                                    <span class="skill-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h3 class="category-title">
+                                    <i class="fas fa-tools"></i>
+                                    Tools & Frameworks
+                                </h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Burp Suite</span>
+                                    <span class="skill-tag">Metasploit</span>
+                                    <span class="skill-tag">Nmap</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="about-card">
+                        <h2 class="card-title">
+                            <i class="fas fa-trophy"></i>
+                            Achievements
+                        </h2>
+                        <div class="achievements-list">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>Certified Ethical Hacker (CEH)</h3>
+                                    <p>EC-Council certified penetration tester</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-bug"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>Bug Bounty Hunter</h3>
+                                    <p>Discovered critical vulnerabilities in major platforms</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>Open Source Contributor</h3>
+                                    <p>Active contributor to cybersecurity tools and frameworks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact CTA -->
+                    <div class="about-card">
+                        <div class="cta-section">
+                            <h2 class="cta-title">Ready to collaborate?</h2>
+                            <p class="cta-text">Let's build something secure and amazing together!</p>
+                            <a href="contact.html" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="terminal-text">
+                        <span class="prompt">irfan@cyberspace:~$</span>
+                        <span class="command">echo "Thanks for visiting!"</span>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irfan's Cyber Space</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Matrix Background -->
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="terminal-prompt">irfan@cyberspace:~$</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        <i class="fas fa-code"></i> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">irfan@cyberspace: ~</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">irfan@cyberspace:~$</span>
+                            <span class="command">whoami</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">Cybersecurity Enthusiast & Full Stack Developer</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">irfan@cyberspace:~$</span>
+                            <span class="command">echo "Welcome to my digital realm..."</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output typing-text" id="typing-text"></span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">irfan@cyberspace:~$</span>
+                            <span class="cursor">█</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <h1 class="hero-title glow">
+                        <span class="bracket">[</span>
+                        IRFAN
+                        <span class="bracket">]</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Penetrating systems, building solutions, securing the digital world.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View Projects
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Preview -->
+        <section class="skills-preview">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">~/skills$</span>
+                    <span class="glow">cat expertise.txt</span>
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="88"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access -->
+        <section class="quick-access">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="terminal-prompt">~/navigation$</span>
+                    <span class="glow">ls -la</span>
+                </h2>
+                <div class="access-grid">
+                    <a href="about.html" class="access-card">
+                        <div class="access-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>About Me</h3>
+                        <p>Learn about my journey in cybersecurity and development</p>
+                    </a>
+                    <a href="projects.html" class="access-card">
+                        <div class="access-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Projects</h3>
+                        <p>Explore my latest security tools and web applications</p>
+                    </a>
+                    <a href="contact.html" class="access-card">
+                        <div class="access-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3>Contact</h3>
+                        <p>Connect with me for collaborations and opportunities</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="terminal-text">
+                        <span class="prompt">irfan@cyberspace:~$</span>
+                        <span class="command">echo "Thanks for visiting!"</span>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
